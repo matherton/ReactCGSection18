@@ -41,10 +41,10 @@ class Counter extends Component {
     return (
       <main className={classes.counter}>
         <h1>Redux Counter</h1>
-        <div className={classes.value}>{counter}</div>
+        <div className={classes.value}>{this.props.counter}</div>
         <div>
-          <button onClick={this.incrementHandler}>Increment</button>
-          <button onClick={this.decrementHandler}>Decrement</button>
+          <button onClick={this.incrementHandler.bind()}>Increment</button>
+          <button onClick={this.decrementHandler.bind()}>Decrement</button>
         </div>
         <button onClick={this.toggleCounterHandler}>Toggle Counter</button>
       </main>
