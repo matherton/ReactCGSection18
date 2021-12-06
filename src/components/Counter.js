@@ -40,10 +40,10 @@ class Counter extends Component {
         <h1>Redux Counter</h1>
         <div className={classes.value}>{counter}</div>
         <div>
-          <button onClick={incrementHandler}>Increment</button>
-          <button onClick={decrementHandler}>Decrement</button>
+          <button onClick={this.incrementHandler}>Increment</button>
+          <button onClick={this.decrementHandler}>Decrement</button>
         </div>
-        <button onClick={toggleCounterHandler}>Toggle Counter</button>
+        <button onClick={this.toggleCounterHandler}>Toggle Counter</button>
       </main>
     );
   }
