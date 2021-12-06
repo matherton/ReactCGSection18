@@ -31,6 +31,10 @@ const Counter = () => {
 
 class Counter extends Component {
   render() {
+    incrementHandler() {}
+    decrementHandler() {}
+    toggleCounterHandler() {}
+    
     return (
       <main className={classes.counter}>
         <h1>Redux Counter</h1>
