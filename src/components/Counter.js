@@ -55,4 +55,11 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Counter);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    increment: () => dispatch({ type: 'INCREMENT' }),
+    decrement: () => dispatch({ type: "DECREMENT" }),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
