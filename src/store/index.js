@@ -21,6 +21,12 @@ const counterReducer = (state = initialState, action) => {
       showCounter: state.showCounter,
     };
   }
+  if (action.type === "toggle") {
+    return {
+      counter: state.counter,
+      showCounter: !state.showCounter,
+    };
+  }
   return state;
 };
 
