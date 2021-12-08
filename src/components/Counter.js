@@ -17,11 +17,11 @@ const Counter = () => {
   };
 
   const decrementHandler = () => {
-    dispatch({ type: "DECREMENT" });
+    dispatch(counterActions.decrement());
   };
 
   const toggleCounterHandler = () => {
-    dispatch({ type: "toggle" });
+    dispatch(counterActions.toggleCounter());
   };
 
   return (
